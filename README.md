@@ -31,7 +31,7 @@ cd your-project-name
 
 npm i
 
-node run initialize
+npm run initialize
 ```
 <a name="run"/>
 

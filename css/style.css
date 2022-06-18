@@ -612,31 +612,6 @@ video {
   transform: none;
 }
 
-@-webkit-keyframes wiggle{
-  0%, 100%{
-    transform: rotate(-12deg);
-  }
-
-  50%{
-    transform: rotate(12deg);
-  }
-}
-
-@keyframes wiggle{
-  0%, 100%{
-    transform: rotate(-12deg);
-  }
-
-  50%{
-    transform: rotate(12deg);
-  }
-}
-
-.animate-wiggle{
-  -webkit-animation: wiggle 1s ease-in-out infinite;
-          animation: wiggle 1s ease-in-out infinite;
-}
-
 @-webkit-keyframes spin{
   to{
     transform: rotate(360deg);
@@ -652,17 +627,6 @@ video {
 .animate-spin{
   -webkit-animation: spin 1s linear infinite;
           animation: spin 1s linear infinite;
-}
-
-@keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin-slow{
-  -webkit-animation: spin 3s linear infinite;
-          animation: spin 3s linear infinite;
 }
 
 .cursor-default{

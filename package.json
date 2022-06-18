@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple boiler plate for a TailWindCSS CLI",
   "scripts": {
-    "initialize": "npx tailwindcss init && node run watch",
+    "initialize": "npx tailwindcss init && npm run watch",
     "build": "npx tailwindcss -i ./imports.css -o ./css/style.css",
     "watch": "npx tailwindcss -i ./src/imports.css -o ./css/style.css --watch"
   },
