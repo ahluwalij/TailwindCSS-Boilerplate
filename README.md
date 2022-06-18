@@ -38,13 +38,19 @@ Open the file using a live server plugin like Live Preview or visit the page fil
 <a name="display"/>
 
 ## Sample Display
-Dark Mode Responsiveness Demo:
+
+Downloadable: 
+
+[Dark Mode Demo](https://user-images.githubusercontent.com/65431368/174418351-cec64d0a-364f-479e-9a68-ecc9b02c5218.mov);
+[Links Demo](https://user-images.githubusercontent.com/65431368/174444889-e9251f71-ff80-41e8-be2e-23ee75024f40.mov)
+
+### Dark Mode Responsiveness Demo:
 
 https://user-images.githubusercontent.com/65431368/174418351-cec64d0a-364f-479e-9a68-ecc9b02c5218.mov
 
-Demo of Links:
+### Links Demo:
 
-https://user-images.githubusercontent.com/65431368/174419848-d0e73aa2-b599-4210-bb10-cb90d08f526a.mov
+https://user-images.githubusercontent.com/65431368/174444889-e9251f71-ff80-41e8-be2e-23ee75024f40.mov
 
 ## Configuration
 
@@ -140,12 +146,18 @@ Example call of an img tag that is going through the spin-slow animation:
         class="animate-spin-slow"
       />
 ```
+## Animation Demo
 
-Normal Spin:
+Downloadable: 
 
-https://user-images.githubusercontent.com/65431368/174443618-2035291e-5131-440f-869f-3146e9f238a8.mov
+[Normal Spin](https://user-images.githubusercontent.com/65431368/174445169-d2263a86-4fc7-44dc-a121-2d3d9393234d.mov);
+[Custom Slow Spin](https://user-images.githubusercontent.com/65431368/174443629-6e614355-faf2-440d-b251-c228e17a9fb0.mov)
 
-Custom Slow Spin:
+### Normal Spin Demo:
+
+https://user-images.githubusercontent.com/65431368/174445169-d2263a86-4fc7-44dc-a121-2d3d9393234d.mov
+
+### Custom Slow Spin Demo:
 
 https://user-images.githubusercontent.com/65431368/174443629-6e614355-faf2-440d-b251-c228e17a9fb0.mov
 
