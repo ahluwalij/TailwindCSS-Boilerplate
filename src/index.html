@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+        async function tryMode(){
+
+            const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if(isDarkMode){
+                document.querySelector('h2').innerText = `Try going into Light Mode!`;
+            }
+            else{
+                document.querySelector('h2').innerText = `Try going into Dark Mode!`;
+            }
+            console.log(isDarkMode)
+
+        }
+        
+        
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            const newColorScheme = event.matches ? "dark" : "light";
+        tryMode();
+});
+window.onload = tryMode;
+    </script>
+    <title>Simple Tailwind Starter</title>
+</head>
+<body>
+    <div class="flex-col space-y-3 h-[95vh] transform-none bg-tailwindcream dark:bg-tailwinddarkblue text-tailwindclay dark:text-tailwindblue"> <!--Vertical flexbox-->
+    <img src="./assets/tailwind.jpeg" alt="" class="h-1/2 dark:invert-0 invert mx-auto mt-30 opacity-90 animate-wiggle hover:opacity-100 hover:animate-none hover:cursor-pointer rounded-full p-3"> <!--IMG-->
+    <div class="shadow block shadow-tailwindclay dark:shadow-tailwindblue p-8 rounded-full max-w-lg text-center font-bold font-tradewinds text-xl mx-auto space-y-3">
+        <h1>Welcome to Tailwind!</h1>
+        <h2 class="text-xs"></h2>
+    </div>
+</div>
+</body>
+
+<footer class="flex bg-tailwindcream dark:bg-tailwinddarkblue h-[5vh] text-tailwindclay dark:text-tailwindblue text-center justify-center underline decoration-tailwindclay dark:decoration-tailwindblue">
+<h1 class="pt-1 pr-2">
+    A Boiler Plate for TailwindCSS - Made By 
+    <a href="https://www.linkedin.com/in/jasdeep-ahluwalia/">Jasdeep Ahluwalia</a>
+</h1>
+<a href="https://github.com/ahluwalij">
+    <img src="./assets/github.png" alt="" class="dark:invert w-6 h-6 mt-1">
+</a>
+</footer>
+</html>

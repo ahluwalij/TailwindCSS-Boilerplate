@@ -1,0 +1,11 @@
+/*
+You can import your own custom fonts by pasting it's import statement below and 
+referencing it in tailwind.config.js
+
+An example font is imported:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
