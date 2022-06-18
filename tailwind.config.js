@@ -5,7 +5,8 @@ module.exports = {
     extend: { //We are extending everything in order to keep the existing things Tailwind provides. 
               //If you want to override something, declare it outside of the extend object
       animation: {
-        'wiggle': 'wiggle 1s ease-in-out infinite', //insantiate wiggle animation
+        'wiggle': 'wiggle 1s ease-in-out infinite', //insantiate custom wiggle animation
+        'spin-slow': 'spin 3s linear infinite', // custom spin-slow animation using the existing spin animation
       },
       keyframes: {
         wiggle: { //keyframes for the custom animation of wiggle
