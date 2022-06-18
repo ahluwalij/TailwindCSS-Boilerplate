@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script>
-        async function tryMode(){
-
-            const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if(isDarkMode){
-                document.querySelector('h2').innerText = `Try going into Light Mode!`;
-            }
-            else{
-                document.querySelector('h2').innerText = `Try going into Dark Mode!`;
-            }
-            console.log(isDarkMode)
-
+      async function tryMode() {
+        const isDarkMode =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches; //Checks window preferences for color scheme
+        if (isDarkMode) { //If dark mode is on
+          document.querySelector("h2").innerText = `Try Going Into Light Mode On Your Computer!`; 
+        } else { //If dark mode is off
+          document.querySelector("h2").innerText = `Try Going Into Dark Mode On Your Computer!`;
         }
-        
-        
+        //Print results to console for testing
+        console.log(`Is Dark Mode: ${isDarkMode}`);
+      }
 
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-            const newColorScheme = event.matches ? "dark" : "light";
-        tryMode();
-});
-window.onload = tryMode;
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => { //Execute function when color scheme is changed
+          const newColorScheme = event.matches ? "dark" : "light";
+          tryMode(); //Call function everytime color scheme is changed
+        });
+      window.onload = tryMode; //Call function on page load
     </script>
-    <title>Simple Tailwind Starter</title>
-</head>
-<body>
-    <div class="flex-col space-y-3 h-[95vh] transform-none bg-tailwindcream dark:bg-tailwinddarkblue text-tailwindclay dark:text-tailwindblue"> <!--Vertical flexbox-->
-    <img src="./assets/tailwind.jpeg" alt="" class="h-1/2 dark:invert-0 invert mx-auto mt-30 opacity-90 animate-wiggle hover:opacity-100 hover:animate-none hover:cursor-pointer rounded-full p-3"> <!--IMG-->
-    <div class="shadow block shadow-tailwindclay dark:shadow-tailwindblue p-8 rounded-full max-w-lg text-center font-bold font-tradewinds text-xl mx-auto space-y-3">
+    <title>Tailwind Boiler Plate</title> <!--Title-->
+    <link rel="icon" type="image/x-icon" href="/src/assets/favicon.ico" /> <!--Favicon-->
+  </head>
+  <body>
+    <div
+      class="flex-col space-y-3 h-[95vh] transform-none bg-tailwindcream dark:bg-tailwinddarkblue text-tailwindclay dark:text-tailwindblue"
+    >
+      <!--Logo flexbox-->
+      <a href="https://tailwindcss.com/" class="cursor-default" target="_blank" rel="noopener noreferrer">
+      <img
+        src="./assets/images/tailwind.jpeg"
+        alt=""
+        class="h-1/2 max-w-30 dark:invert-0 invert mx-auto mt-30 opacity-90 animate-wiggle hover:opacity-100 hover:animate-none hover:cursor-pointer rounded-full p-3"
+      />
+      </a>
+      <!--Text Card-->
+      <div
+        class="shadow block shadow-tailwindclay dark:shadow-tailwindblue p-8 rounded-full max-w-lg text-center font-bold font-tradewinds text-xl mx-auto space-y-3" 
+      >
+        <!--Text Card's Text-->
         <h1>Welcome to Tailwind!</h1>
-        <h2 class="text-xs"></h2>
+        <h2 class="text-sm"></h2>
+        <a href="https://tailwindcss.com/docs/installation" class="underline text-xs" target="_blank" rel="noopener noreferrer" >Get Started Here</a>
+        <!--Text to change into other mode-->
+      </div>
     </div>
-</div>
-</body>
+  </body>
 
-<footer class="flex bg-tailwindcream dark:bg-tailwinddarkblue h-[5vh] text-tailwindclay dark:text-tailwindblue text-center justify-center underline decoration-tailwindclay dark:decoration-tailwindblue">
-<h1 class="pt-1 pr-2">
-    A Boiler Plate for TailwindCSS - Made By 
-    <a href="https://www.linkedin.com/in/jasdeep-ahluwalia/">Jasdeep Ahluwalia</a>
-</h1>
-<a href="https://github.com/ahluwalij">
-    <img src="./assets/github.png" alt="" class="dark:invert w-6 h-6 mt-1">
-</a>
-</footer>
+  <!--Footer-->
+  <footer
+    class="flex bg-tailwindcream dark:bg-tailwinddarkblue h-[5vh] text-tailwindclay dark:text-tailwindblue text-center justify-center underline decoration-tailwindclay dark:decoration-tailwindblue"
+  >
+    <!--Footer Text-->
+    <h1 class="pt-1 pr-2">
+      A Boiler Plate for TailwindCSS - Made By
+      <!--Social Link-->
+      <a href="https://www.linkedin.com/in/jasdeep-ahluwalia/"
+      target="_blank" rel="noopener noreferrer"
+        >Jasdeep Ahluwalia</a
+      >
+    </h1>
+    
+    <!--Github Icon-->
+    <a href="https://github.com/ahluwalij"
+    target="_blank" rel="noopener noreferrer"
+    >
+      <img
+        src="./assets/images/github.png"
+        alt=""
+        class="dark:invert w-6 h-6 mt-1"
+      />
+    </a>
+  </footer>
 </html>

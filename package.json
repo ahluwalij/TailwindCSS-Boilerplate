@@ -1,12 +1,11 @@
 {
   "name": "tailwind-cli-template",
   "version": "1.0.0",
-  "description": "A simple boiler plate for a tailwindCSS CLI config",
-  "main": "index.js",
+  "description": "A simple boiler plate for a TailWindCSS CLI",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./input.css -o ./css/style.css",
-    "watch": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+    "initialize": "npx tailwindcss init && node run watch",
+    "build": "npx tailwindcss -i ./imports.css -o ./css/style.css",
+    "watch": "npx tailwindcss -i ./src/imports.css -o ./css/style.css --watch"
   },
   "keywords": [],
   "author": "Jasdeep Ahluwalia",
