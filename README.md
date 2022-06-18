@@ -1,14 +1,5 @@
 # tailwindCSS-CLI-template
 
-Installation
-Clone the repository locally with none of its git history
-
-$ git clone --depth 1 --single-branch https://github.com/saucesteals/electron-typescript-react-tailwind-redux.git your-project-name
-
-$ cd your-project-name
-
-$ yarn
-
 ## Table of Contents  
 
 [Installation](#installation)
@@ -29,11 +20,11 @@ $ yarn
 
 ## Installation
 
-Install dependencies via npm
 
+Install dependencies via npm
 Clone the repository locally with none of its git history
 
-```
+```bash
 git clone --depth 1 --single-branch https://github.com/ahluwalij/tailwind-boiler-plate.git your-project-name
 
 cd your-project-name
