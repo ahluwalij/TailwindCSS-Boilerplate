@@ -4,8 +4,9 @@
   "description": "A simple boiler plate for a TailWindCSS CLI",
   "scripts": {
     "initialize": "npx tailwindcss init && npm run watch",
-    "build": "npx tailwindcss -i ./imports.css -o ./css/style.css",
-    "watch": "npx tailwindcss -i ./src/imports.css -o ./css/style.css --watch"
+    "build": "npx tailwindcss -i ./src/imports.css -o ./css/style.css",
+    "watch": "npx tailwindcss -i ./src/imports.css -o ./css/style.css --watch",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/src/index.html\""
   },
   "keywords": [],
   "author": "Jasdeep Ahluwalia",
