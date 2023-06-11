@@ -1,4 +1,4 @@
-# tailwindCSS-CLI-template
+# TailwindCSS-CLI-template
 
 ## Table of Contents  
 
